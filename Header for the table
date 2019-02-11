@@ -1,0 +1,13 @@
+XTENSION= 'BINTABLE'           / marks beginning of new HDU                     
+BITPIX  =                    8 / bits per data value                            
+NAXIS   =                    2 / number of axes                                 
+NAXIS1  =                   16 / size of the n'th axis                          
+NAXIS2  =                 1000 / size of the n'th axis                          
+PCOUNT  =                    0 / Required value                                 
+GCOUNT  =                    1 / Required value                                 
+TFIELDS =                    2 / Number of table fields                         
+TFORM1  = '1D      '           / column data format                             
+TTYPE1  = 'x       '           / label for field 0                              
+TFORM2  = '1D      '           / column data format                             
+TTYPE2  = 'sin(x)  '           / label for field 1                              
+END                                                                             
