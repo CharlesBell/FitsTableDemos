@@ -1,0 +1,5 @@
+SIMPLE  =                    T / Java FITS: Mon Feb 11 13:50:10 CST 2019        
+BITPIX  =                    8 / bits per data value                            
+NAXIS   =                    0 / number of axes                                 
+EXTEND  =                    T / Extensions are permitted                       
+END        
