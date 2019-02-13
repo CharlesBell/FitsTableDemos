@@ -53,8 +53,11 @@ public class WriteFitsTableDemo {
 			BinaryTableHDU tableHDU = (BinaryTableHDU) FitsFactory.hduFactory(data);
 			// The java library does not create column names for the column labels
 			// so use setColumnName() method to insert them into header
+			// The java library does not create display formats for the columns
+			//  so sdding as key value comments to insert them into header
 			for (int i = 0;i<columnNames.length;i++){			
 				tableHDU.setColumnName(i, columnNames[i], String.valueOf("label for field " + i)) ;
+				tableHDU.getHeader().addValue("TDISP" + (i+1), "D24.5", " ");
 			}
 			// if you want to see what is in the header, uncomment the following line 
 			// tableHDU.getHeader().dumpHeader(System.out);
